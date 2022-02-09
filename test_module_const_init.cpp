@@ -92,6 +92,7 @@ public:
 
 int main() {
 
+
     auto PrintOut = [](std::string const& name, auto const& value) {
         std::cout << std::format("{:>40} ==> {}\n", name, value);
     };
@@ -133,7 +134,6 @@ int main() {
     PrintOut("my_module::s_constexpr_const_variable",  my_module:: s_constexpr_const_variable);
     PrintOut("my_module::u_constexpr_const_variable",  my_module:: u_constexpr_const_variable);
     //PrintOut("my_module::ua_constexpr_const_variable", my_module::ua_constexpr_const_variable);	// NOT COMPILES
-    PrintOut("my_module::ua_constexpr_const_variable", "! NOT COMPILES !");
     std::cout << "\n";
 }
 
