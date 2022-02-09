@@ -133,7 +133,7 @@ int main() {
 
     PrintOut("my_module::s_constexpr_const_variable",  my_module:: s_constexpr_const_variable);
     PrintOut("my_module::u_constexpr_const_variable",  my_module:: u_constexpr_const_variable);
-    //PrintOut("my_module::ua_constexpr_const_variable", my_module::ua_constexpr_const_variable);	// NOT COMPILES
+    PrintOut("my_module::ua_constexpr_const_variable", my_module::ua_constexpr_const_variable);	// NOT COMPILES
     std::cout << "\n";
 }
 
