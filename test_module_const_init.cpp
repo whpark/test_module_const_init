@@ -65,7 +65,7 @@ public:
     }
 };
 
-// just format specifiers for my_module. (NOT working if belows moved to my_moudule. template specifiers are NOT working in module my_module)
+// just format specifiers for my_module. (NOT working if belows are moved to my_moudule. template specifiers are NOT working in module my_module)
 template <> struct std::formatter<my_module::s_color_t> : public std::formatter<std::string> {
 public:
     auto format(my_module::s_color_t color, std::format_context& ctx) {
@@ -133,7 +133,8 @@ int main() {
 
     PrintOut("my_module::s_constexpr_const_variable",  my_module:: s_constexpr_const_variable);
     PrintOut("my_module::u_constexpr_const_variable",  my_module:: u_constexpr_const_variable);
-    PrintOut("my_module::ua_constexpr_const_variable", my_module::ua_constexpr_const_variable);	// NOT COMPILES
+    //PrintOut("my_module::ua_constexpr_const_variable", my_module::ua_constexpr_const_variable);	// NOT COMPILES
+    PrintOut("my_module::ua_constexpr_const_variable", "! NOT COMPILES !");
     std::cout << "\n";
 }
 

@@ -42,7 +42,7 @@ export namespace my_module {
 }
 
 
-#if 0   // template specialization NOT working in module.
+#if 0   // template specialization in module. it compiles but NOT working (NOT exported?).
 export template <> struct std::formatter<my_module::s_color_t> : public std::formatter<std::string> {
 public:
     auto format(my_module::s_color_t color, std::format_context& ctx) {
